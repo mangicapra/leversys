@@ -1,0 +1,9 @@
+<nav>
+  <div *ngIf="authService.isLoggedIn; else notLoggedIn">
+    <h1>Leversys Bookstore</h1>
+    <a (click)="authService.logout()">Log out</a>
+  </div>
+  <ng-template #notLoggedIn>
+    <a class="login" (click)="openLoginModal()">Login</a>
+  </ng-template>
+</nav>

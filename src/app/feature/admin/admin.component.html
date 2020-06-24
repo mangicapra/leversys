@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="container__content">
+    <kendo-grid
+      [data]="gridView"
+      [height]="600"
+      [pageSize]="state.take"
+      [skip]="state.skip"
+      [pageable]="true"
+      [filter]="state.filter"
+      [filterable]="true"
+      [selectable]="'single'"
+      (edit)="editHandler($event)"
+      (remove)="removeHandler($event)"
+      (add)="addHandler($event)"
+      (pageChange)="pageChange($event)"
+      [kendoGridSelectBy]="selectedCallback"
+      [selectedKeys]="mySelection"
+      (selectionChange)="selectionChange($event)"
+      (dataStateChange)="dataStateChange($event)"
+    >
+      <ng-template kendoGridToolbarTemplate>
+        <button kendoGridAddCommand>Add user</button>
+        <button [disabled]="!selectedUser" kendoGridEditCommand>
+          Edit user
+        </button>
+        <button [disabled]="!selectedUser" kendoGridRemoveCommand>
+          Delete user
+        </button>
+      </ng-template>
+      <kendo-grid-column
+        filter="numeric"
+        width="210"
+        field="id"
+        title="Id"
+      ></kendo-grid-column>
+      <kendo-grid-column
+        width="210"
+        field="name"
+        title="Name"
+      ></kendo-grid-column>
+      <kendo-grid-column
+        width="210"
+        field="lastName"
+        title="Last Name"
+      ></kendo-grid-column>
+      <kendo-grid-column
+        width="210"
+        field="email"
+        title="Email"
+      ></kendo-grid-column>
+    </kendo-grid>
+  </div>
+</div>

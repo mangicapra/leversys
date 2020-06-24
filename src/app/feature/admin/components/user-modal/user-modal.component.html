@@ -1,0 +1,100 @@
+<kendo-dialog-titlebar>
+  <p>{{ _isNew ? 'Add' : 'Edit' }} user</p>
+</kendo-dialog-titlebar>
+<div class="container">
+  <form [formGroup]="formGroup">
+    <div class="group">
+      <label kendoTooltip for="name"
+        >Name:
+        <span
+          title="{{ controls['name'].errors?.backendErrors }}"
+          *ngIf="submited && controls['name'].errors?.backendErrors"
+          class="k-icon k-i-warning"
+        ></span>
+        <span
+          title="This field is required."
+          *ngIf="submited && controls['name'].errors?.required"
+          class="k-icon k-i-warning"
+        ></span>
+      </label>
+      <input
+        [class.inputErr]="submited && controls['name'].errors"
+        type="text"
+        id="name"
+        formControlName="name"
+      />
+    </div>
+    <div class="group">
+      <label kendoTooltip for="lastName"
+        >Last Name:
+        <span
+          title="{{ controls['lastName'].errors?.backendErrors }}"
+          *ngIf="submited && controls['lastName'].errors?.backendErrors"
+          class="k-icon k-i-warning"
+        ></span>
+        <span
+          title="This field is required."
+          *ngIf="submited && controls['lastName'].errors?.required"
+          class="k-icon k-i-warning"
+        ></span>
+      </label>
+      <input
+        [class.inputErr]="submited && controls['lastName'].errors"
+        type="text"
+        id="lastName"
+        formControlName="lastName"
+      />
+    </div>
+    <div class="group">
+      <label kendoTooltip for="email"
+        >Email:
+        <span
+          title="{{ controls['email'].errors?.backendErrors }}"
+          *ngIf="submited && controls['email'].errors?.backendErrors"
+          class="k-icon k-i-warning"
+        ></span>
+        <span
+          title="This field is required."
+          *ngIf="submited && controls['email'].errors?.required"
+          class="k-icon k-i-warning"
+        ></span>
+        <span
+          title="Email is not in correct format."
+          *ngIf="submited && controls['email'].errors?.email"
+          class="k-icon k-i-warning"
+        ></span>
+      </label>
+      <input
+        [class.inputErr]="submited && controls['email'].errors"
+        type="email"
+        id="email"
+        formControlName="email"
+      />
+    </div>
+    <div class="group">
+      <label kendoTooltip for="password"
+        >Password:
+        <span
+          title="{{ controls['password'].errors?.backendErrors }}"
+          *ngIf="submited && controls['password'].errors?.backendErrors"
+          class="k-icon k-i-warning"
+        ></span>
+        <span
+          title="This field is required."
+          *ngIf="submited && controls['password'].errors?.required"
+          class="k-icon k-i-warning"
+        ></span>
+      </label>
+      <input
+        [class.inputErr]="submited && controls['password'].errors"
+        type="password"
+        id="password"
+        formControlName="password"
+      />
+    </div>
+  </form>
+</div>
+<kendo-dialog-actions layout="normal">
+  <button kendoButton (click)="onConfirmAction()">Save</button>
+  <button kendoButton (click)="onCancelAction()">Cancel</button>
+</kendo-dialog-actions>

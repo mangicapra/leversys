@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$fFVjysht69WZWoe7NObE6.ZV0lWj8cqXx/laD/NHALjrHQH5ED2h2",
+      "id": 1,
+      "role": 1
+    },
+    {
+      "email": "user@user.com",
+      "password": "$2a$10$2b5BG.r65BuG.w1UKDsHN.Rnfqnq3Gb52lpmGQTYY6AKq9vxHsN7u",
+      "name": "Dragan",
+      "lastName": "Dejanovic",
+      "role": 2,
+      "id": 2
+    },
+    {
+      "email": "user@users.com",
+      "password": "$2a$10$ntpkwSgbHswfDTHdmV6ACe7lWpQHkWW5ftjpev2M4sZjFo4hIvEBu",
+      "name": "user",
+      "lastName": "users",
+      "role": 2,
+      "id": 3
+    },
+    {
+      "email": "test@testing.com",
+      "password": "$2a$10$0tnO5bf.zHXPik1jSZbdU.zbOxL4uY93iRoKaZBb5qL9rcL89A0Jm",
+      "name": "test",
+      "lastName": "testing",
+      "role": 2,
+      "id": 4
+    },
+    {
+      "email": "aaa@aaa.com",
+      "password": "$2a$10$gbJkGqYY60weGqQFEFm2lO/SL057wQts7skfwzYUpb3zlIgCgrk7K",
+      "name": "aaa",
+      "lastName": "aaa",
+      "role": 2,
+      "id": 5
+    },
+    {
+      "email": "ziqynu@mailinator.com",
+      "password": "$2a$10$MycqJdpJhttBViUGTpqDkeTBipYRi0Z2XJrG.PRJ35IjMeVJn3YNK",
+      "name": "TaShya Hines",
+      "lastName": "Garrison",
+      "role": 2,
+      "id": 6
+    },
+    {
+      "email": "tygu@mailinator.com",
+      "password": "$2a$10$bVaSwx18RPzvSL1.TxjFc.GhFwgqZRID5upVNG3mn0hNLhuEBrSg.",
+      "name": "Shafira Kirby",
+      "lastName": "Stark",
+      "role": 2,
+      "id": 7
+    },
+    {
+      "email": "fimane@mailinator.com",
+      "password": "$2a$10$7yktWTvz/Vqg7NiLKqMvJ.BdQQ996hPU8MQwFsr9k7nVuwSS2poEy",
+      "name": "Kim Flynn",
+      "lastName": "Hinton",
+      "role": 2,
+      "id": 8
+    },
+    {
+      "email": "panezywe@mailinator.net",
+      "password": "$2a$10$dZN3eQ5r8.PjRu5eIUF4oOhEXRc5rbU/IX.Y/foKYq9CWYK9YJc4a",
+      "name": "Heidi Nguyen",
+      "lastName": "Bowers",
+      "role": 2,
+      "id": 9
+    },
+    {
+      "email": "tofyxofym@mailinator.com",
+      "password": "$2a$10$QrGjE8S0XB8F4BACHVUEb.fUyrJz1bTCp2rgsFHqIsdWOwHNdsH8m",
+      "name": "Florence",
+      "lastName": "Dunn",
+      "role": 2,
+      "id": 11
+    },
+    {
+      "email": "nalywypyso@mailinator.net",
+      "password": "$2a$10$BN0fmSELUSx.Mdpv.KoXf.wG2MljRgL1B6sf8GTdxLyUFyRxANclW",
+      "name": "Charlotte Dillon",
+      "lastName": "Chan",
+      "role": 2,
+      "id": 12
+    },
+    {
+      "email": "vuvuwomub@mailinator.net",
+      "password": "$2a$10$65n2HsAN1l7CbhmSZZtxn.l1BFYvwX5oU1QTshw2h6JTeAUhRZ83i",
+      "name": "Lacy Wilkins",
+      "lastName": "Sandoval",
+      "role": 2,
+      "id": 13
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ]
+}

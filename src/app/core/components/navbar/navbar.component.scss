@@ -1,0 +1,32 @@
+@import '../../../../assets/style/general.scss';
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 44px 0;
+  .login {
+    color: $light;
+    font-size: 60px;
+    line-height: 1.33;
+    padding-right: 38px;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 80px 0 50px;
+    h1,
+    a {
+      color: $gray;
+      line-height: 47px;
+      font-size: 35px;
+      font-weight: 400;
+    }
+  }
+}

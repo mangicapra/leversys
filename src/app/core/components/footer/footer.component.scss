@@ -1,0 +1,18 @@
+@import '../../../../assets/style/general.scss';
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 80px;
+  h1 {
+    color: $gray;
+    line-height: 47px;
+    font-size: 35px;
+    font-weight: 400;
+  }
+}

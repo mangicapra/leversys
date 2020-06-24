@@ -1,0 +1,64 @@
+@import '../../../assets/style/general.scss';
+
+.container {
+  background-color: $dark;
+  width: 100vw;
+  height: 100vh;
+  padding: 135px 80px 207px 50px;
+  &__content {
+    overflow: auto;
+    ::ng-deep kendo-grid {
+      border-color: rgba(255, 255, 255, 0.08);
+      .k-pager-wrap,
+      .k-grid-header,
+      .k-grid-content,
+      .k-grid-toolbar,
+      .k-grouping-header,
+      .k-grid-add-row,
+      .k-grid-footer {
+        background-color: $dark;
+      }
+      .k-grid-content {
+        overflow: auto;
+      }
+      .k-grid-header {
+        border-color: rgba(255, 255, 255, 0.08);
+        .k-header {
+          border-color: rgba(255, 255, 255, 0.08);
+          span {
+            color: #fff;
+            font-size: 14px;
+            line-height: 36px;
+            font-weight: 400;
+          }
+        }
+      }
+      .k-filtercell {
+        input {
+          @extend %input;
+        }
+        .k-filtercell-operator,
+        .k-select {
+          display: none;
+        }
+      }
+      .k-pager-wrap {
+        color: #fff;
+        font-size: 14px;
+        line-height: 36px;
+        font-weight: 400;
+      }
+      .k-grid-toolbar {
+        border-color: rgba(255, 255, 255, 0.08);
+        button:nth-child(1),
+        button:nth-child(2) {
+          @extend %button-primary;
+          margin-right: 18px;
+        }
+        button:nth-child(3) {
+          @extend %button-secondary;
+        }
+      }
+    }
+  }
+}
