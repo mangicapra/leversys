@@ -1,0 +1,7 @@
+<img
+  [class.selected]="selectedBookId === book?.id"
+  [class.outOfStock]="book?.inStock === 0"
+  src="assets/images/book.png"
+  alt="Book image"
+/>
+<p>{{ book?.title }}</p>

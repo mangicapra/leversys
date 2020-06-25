@@ -1,0 +1,26 @@
+<div class="detail">
+  <a [href]="selectedBook?.url" target="_blank">
+    <img
+      [src]="selectedBook?.imageUrl || 'assets/images/book.png'"
+      alt="Book url"
+    />
+  </a>
+  <div class="info">
+    <div>
+      <p>{{ selectedBook?.title }}</p>
+      <p>{{ selectedBook?.year | date: 'yyyy' }}</p>
+      <p *ngFor="let author of selectedBook?.authors">{{ author }}</p>
+      <p>
+        Available: {{ selectedBook?.inStock }}
+        {{ selectedBook?.inStock === 1 ? 'book' : 'books' }}
+      </p>
+    </div>
+    <button
+      [disabled]="selectedBook?.inStock === 0"
+      kendoButton
+      (click)="rent()"
+    >
+      Rent book
+    </button>
+  </div>
+</div>

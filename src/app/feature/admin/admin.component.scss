@@ -1,12 +1,11 @@
 @import '../../../assets/style/general.scss';
 
 .container {
-  background-color: $dark;
-  width: 100vw;
-  height: 100vh;
-  padding: 135px 80px 207px 50px;
+  background-color: #343333;
+  padding: 135px 80px 217px 50px;
+  margin-top: -135px;
+  margin-bottom: -207px;
   &__content {
-    overflow: auto;
     ::ng-deep kendo-grid {
       border-color: rgba(255, 255, 255, 0.08);
       .k-pager-wrap,

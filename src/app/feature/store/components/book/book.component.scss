@@ -1,0 +1,19 @@
+:host {
+  margin-right: 20px;
+  width: 230px;
+  margin-bottom: 40px;
+  position: relative;
+  p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    text-align: center;
+  }
+  .selected {
+    background-color: #9dabe1;
+  }
+  .outOfStock {
+    background-color: rgb(19, 18, 18);
+    opacity: 0.4;
+  }
+}

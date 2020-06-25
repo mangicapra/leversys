@@ -1,0 +1,37 @@
+@import '../../../assets/style/general.scss';
+
+.container {
+  background-color: $dark;
+  padding: 135px 80px 207px 50px;
+  margin-top: -135px;
+  margin-bottom: -207px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    .books {
+      display: flex;
+      flex-wrap: wrap;
+      border: $border;
+      padding: 46px 30px;
+      width: calc((100% / 2) - 25px);
+    }
+    .details {
+      width: calc((100% / 2) - 25px);
+      &__general {
+        display: flex;
+        align-items: flex-start;
+        border: $border;
+        padding: 35px 25px;
+        &__box {
+          width: calc(100% / 2);
+          p {
+            font-size: 22px;
+            line-height: 20px;
+            color: #fff;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}

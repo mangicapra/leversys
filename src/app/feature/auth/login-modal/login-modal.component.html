@@ -1,8 +1,8 @@
-<kendo-dialog-titlebar>
+<div class="title">
   <p>Login</p>
-</kendo-dialog-titlebar>
-<div class="container">
-  <form [formGroup]="formGroup">
+</div>
+<form [formGroup]="formGroup" (ngSubmit)="onConfirmAction()">
+  <div class="container">
     <div class="group">
       <label kendoTooltip for="email"
         >Email:
@@ -50,9 +50,9 @@
         formControlName="password"
       />
     </div>
-  </form>
-</div>
-<kendo-dialog-actions layout="normal">
-  <button kendoButton (click)="onConfirmAction()">Save</button>
-  <button kendoButton (click)="onCancelAction()">Cancel</button>
-</kendo-dialog-actions>
+  </div>
+  <div class="modalActions">
+    <button kendoButton primary="true">Login</button>
+    <button kendoButton (click)="onCancelAction()">Cancel</button>
+  </div>
+</form>

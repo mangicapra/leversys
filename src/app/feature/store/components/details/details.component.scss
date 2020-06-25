@@ -1,0 +1,31 @@
+@import '../../../../../assets/style/general.scss';
+
+.detail {
+  border: $border;
+  padding: 26px 35px 69px 35px;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 21px;
+  height: 473px;
+  img {
+    width: 300px;
+    height: 375px;
+    margin-right: 40px;
+  }
+  .info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+  }
+  p {
+    font-size: 22px;
+    line-height: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  button {
+    @extend %button-primary;
+  }
+}

@@ -1,15 +1,19 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnDestroy } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { DialogRef, DialogContentBase } from '@progress/kendo-angular-dialog';
 import { UserService } from '../../services/user.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-user-modal',
   templateUrl: './user-modal.component.html',
   styleUrls: ['./user-modal.component.scss'],
 })
-export class UserModalComponent extends DialogContentBase {
+export class UserModalComponent extends DialogContentBase implements OnDestroy {
   public submited: boolean;
+
+  private addUserSubscription = new Subscription();
+  private editUserSubscription = new Subscription();
 
   private _lastName: string;
   private _name: string;
@@ -46,6 +50,11 @@ export class UserModalComponent extends DialogContentBase {
     super(dialog);
   }
 
+  ngOnDestroy() {
+    this.addUserSubscription.unsubscribe();
+    this.editUserSubscription.unsubscribe();
+  }
+
   public formGroup: FormGroup = new FormGroup({
     name: new FormControl('', Validators.required),
     lastName: new FormControl('', Validators.required),
@@ -73,26 +82,35 @@ export class UserModalComponent extends DialogContentBase {
   }
 
   private createUser(): void {
-    this.userService.addUser(this.formGroup.value).subscribe(
-      (res) => this.dialog.close({ text: 'yes' }),
-      (err) =>
-        /password/i.test(err.error)
-          ? this.formGroup
-              .get('password')
-              .setErrors({ backendErrors: err.error })
-          : this.formGroup.get('email').setErrors({ backendErrors: err.error })
+    this.addUserSubscription.add(
+      this.userService.addUser(this.formGroup.value).subscribe(
+        (res) => this.dialog.close({ text: 'yes' }),
+        (err) =>
+          /password/i.test(err.error)
+            ? this.formGroup
+                .get('password')
+                .setErrors({ backendErrors: err.error })
+            : this.formGroup
+                .get('email')
+                .setErrors({ backendErrors: err.error })
+      )
     );
   }
 
   private updateUser(): void {
-    this.userService.editUser(this._id, this.formGroup.value).subscribe(
-      (res) => this.dialog.close({ text: 'yes' }),
-      (err) =>
-        /password/i.test(err.error)
-          ? this.formGroup
-              .get('password')
-              .setErrors({ backendErrors: err.error })
-          : this.formGroup.get('email').setErrors({ backendErrors: err.error })
+    delete this.formGroup.value.password;
+    this.editUserSubscription.add(
+      this.userService.editUser(this._id, this.formGroup.value).subscribe(
+        (res) => this.dialog.close({ text: 'yes' }),
+        (err) =>
+          /password/i.test(err.error)
+            ? this.formGroup
+                .get('password')
+                .setErrors({ backendErrors: err.error })
+            : this.formGroup
+                .get('email')
+                .setErrors({ backendErrors: err.error })
+      )
     );
   }
 }

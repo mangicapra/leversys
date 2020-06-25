@@ -1,1 +1,29 @@
-<p>worker works!</p>
+<div class="container">
+  <div class="container__content">
+    <div class="books">
+      <app-book
+        *ngFor="let book of books"
+        [book]="book"
+        [selectedBookId]="selectedBookId"
+        (click)="selectBook(book)"
+      ></app-book>
+    </div>
+    <div class="details">
+      <app-details
+        *ngIf="selectedBook"
+        [selectedBook]="selectedBook"
+        (rentBook)="handleBookRent($event)"
+      ></app-details>
+      <div class="details__general">
+        <div class="details__general__box">
+          <p>Logged user: {{ loggedUser?.name }}</p>
+          <p>Login time: {{ loginTime }}</p>
+          <p>Time on bookstore: {{ time | date: 'H:mm:ss' }}</p>
+        </div>
+        <div class="details__general__box">
+          <p>Number of books:</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,18 +1,20 @@
 @import '../../../assets/style/general';
 
 .background {
-  width: 100vw;
-  height: 100vh;
   background-image: url('../../../assets/images/bookstore.png');
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-  display: flex;
-  align-items: center;
+  margin-top: -167px;
+  height: 100vh;
+  padding-top: 167px;
   h1 {
     color: $light;
     font-size: 126px;
     line-height: 1.33;
     font-weight: 400;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }

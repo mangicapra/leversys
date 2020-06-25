@@ -24,6 +24,11 @@ const routes: Routes = [
     data: { roles: ['admin'] },
     canActivate: [AuthGuard],
   },
+  {
+    path: '**',
+    redirectTo: '',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
