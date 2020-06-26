@@ -110,6 +110,7 @@ export class AdminComponent implements OnInit, OnDestroy {
       userInfo.email = this.selectedUser.email;
       userInfo.password = this.selectedUser.password;
       userInfo.id = this.selectedUser.id;
+      userInfo.books = this.selectedUser.books;
     }
 
     this.addModalSubscription.add(

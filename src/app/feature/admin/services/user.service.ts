@@ -17,8 +17,8 @@ export class UserService {
   addUser(user: User): Observable<any> {
     return this.http.post<User>(`${environment.apiUrl}/users`, user);
   }
-  editUser(id: number, user: User): Observable<any> {
-    return this.http.patch<User>(`${environment.apiUrl}/users/${id}`, user);
+  editUser(id: number, data): Observable<any> {
+    return this.http.patch<User>(`${environment.apiUrl}/users/${id}`, data);
   }
   deleteUser(id: number): Observable<any> {
     return this.http.delete<User>(`${environment.apiUrl}/users/${id}`);

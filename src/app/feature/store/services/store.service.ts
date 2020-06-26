@@ -18,7 +18,9 @@ export class StoreService {
     return this.http.get<Book>(`${environment.apiUrl}/books/${id}`);
   }
 
-  changeCopiesNumber(id: number, inStock: number): Observable<any> {
-    return this.http.patch(`${environment.apiUrl}/books/${id}`, { inStock });
+  changeCopiesNumber(id: number, inStock: number): Observable<Book> {
+    return this.http.patch<Book>(`${environment.apiUrl}/books/${id}`, {
+      inStock,
+    });
   }
 }

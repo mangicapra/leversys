@@ -2,8 +2,9 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { StoreService } from './services/store.service';
 import { Book } from './models/book';
 import { Subscription, Observable } from 'rxjs';
-import { User } from '@models/user';
+import { User, UserBook } from '@models/user';
 import { DatePipe } from '@angular/common';
+import { UserService } from '../admin/services/user.service';
 
 @Component({
   selector: 'app-store',
@@ -14,6 +15,8 @@ import { DatePipe } from '@angular/common';
 export class StoreComponent implements OnInit, OnDestroy {
   private singleBookSubscription = new Subscription();
   private bookSubscription = new Subscription();
+  private changeCopiesNumberSubscription = new Subscription();
+  private editUserSubscription = new Subscription();
 
   public loggedUser: User;
   public loginTime: string;
@@ -21,8 +24,13 @@ export class StoreComponent implements OnInit, OnDestroy {
   public selectedBook: Book;
   public time = new Date();
   public selectedBookId: number;
+  public bookNumber: number;
 
-  constructor(private storeService: StoreService, private datePipe: DatePipe) {}
+  constructor(
+    private storeService: StoreService,
+    private datePipe: DatePipe,
+    private userService: UserService
+  ) {}
 
   ngOnInit() {
     setInterval(() => {
@@ -34,11 +42,14 @@ export class StoreComponent implements OnInit, OnDestroy {
       'H:mm:ss'
     );
     this.getBooks();
+    this.bookNumber = this.calculateBooks;
   }
 
   ngOnDestroy() {
     this.singleBookSubscription.unsubscribe();
     this.bookSubscription.unsubscribe();
+    this.editUserSubscription.unsubscribe();
+    this.changeCopiesNumberSubscription.unsubscribe();
   }
 
   private getBooks(): void {
@@ -60,14 +71,39 @@ export class StoreComponent implements OnInit, OnDestroy {
     );
   }
 
+  private get calculateBooks() {
+    return this.loggedUser.books.reduce((a, b) => a + b.ammount, 0);
+  }
+
   handleBookRent(ev: boolean): void {
     if (this.selectedBook.inStock !== 0) {
-      this.storeService
-        .changeCopiesNumber(this.selectedBook.id, this.selectedBook.inStock - 1)
-        .subscribe((book: Book) => {
-          this.books[this.books.findIndex((el) => el.id === book.id)] = book;
-          this.selectedBook = book;
-        });
+      const rentBookSelected: UserBook = this.loggedUser.books.filter(
+        (book: UserBook) => book.id === this.selectedBook.id
+      )[0];
+      ++rentBookSelected.ammount;
+      this.loggedUser.books[
+        this.loggedUser.books.findIndex((el) => el.id === rentBookSelected.id)
+      ] = rentBookSelected;
+      this.changeCopiesNumberSubscription.add(
+        this.storeService
+          .changeCopiesNumber(
+            this.selectedBook.id,
+            this.selectedBook.inStock - 1
+          )
+          .subscribe((book: Book) => {
+            this.books[this.books.findIndex((el) => el.id === book.id)] = book;
+            this.selectedBook = book;
+            this.editUserSubscription.add(
+              this.userService
+                .editUser(this.loggedUser.id, { books: this.loggedUser.books })
+                .subscribe((user: User) => {
+                  localStorage.setItem('user', JSON.stringify(user));
+                  this.loggedUser = user;
+                  this.bookNumber = this.calculateBooks;
+                })
+            );
+          })
+      );
     }
   }
 }

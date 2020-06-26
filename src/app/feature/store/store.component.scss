@@ -20,10 +20,12 @@
       &__general {
         display: flex;
         align-items: flex-start;
+        flex-wrap: wrap;
         border: $border;
         padding: 35px 25px;
         &__box {
           width: calc(100% / 2);
+          min-width: 300px;
           p {
             font-size: 22px;
             line-height: 20px;

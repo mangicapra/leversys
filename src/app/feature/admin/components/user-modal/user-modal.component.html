@@ -89,13 +89,21 @@
         ></span>
       </label>
       <input
-        readonly
+        [readonly]="!_isNew"
         kendoTextBox
         [class.inputErr]="submited && controls['password'].errors"
         type="password"
         id="password"
         formControlName="password"
       />
+    </div>
+    <div *ngIf="!_isNew">
+      <label for="rentedBooks">List of rented books</label>
+      <div class="rented">
+        <p *ngFor="let book of _books">
+          <span *ngIf="book?.ammount !== 0">{{ book?.title }}, </span>
+        </p>
+      </div>
     </div>
   </div>
   <div class="modalActions">

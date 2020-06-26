@@ -3,6 +3,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { DialogRef, DialogContentBase } from '@progress/kendo-angular-dialog';
 import { UserService } from '../../services/user.service';
 import { Subscription } from 'rxjs';
+import { UserBook } from '@models/user';
 
 @Component({
   selector: 'app-user-modal',
@@ -19,8 +20,13 @@ export class UserModalComponent extends DialogContentBase implements OnDestroy {
   private _name: string;
   private _email: string;
   private _password: string;
+  public _books: UserBook[];
   private _id: number;
   public _isNew = true;
+
+  @Input() public set books(value: UserBook[]) {
+    this._books = value;
+  }
 
   @Input() public set name(value: string) {
     this.formGroup.controls.name.setValue(value);
@@ -81,7 +87,95 @@ export class UserModalComponent extends DialogContentBase implements OnDestroy {
     }
   }
 
+  private get addBooks(): UserBook[] {
+    return [
+      {
+        id: 1,
+        title: 'Database Design - 2nd Edition',
+        ammount: 0,
+      },
+      {
+        id: 2,
+        title: 'Docker Cookbook - Second Edition',
+        ammount: 0,
+      },
+      {
+        id: 3,
+        title: 'Clever Algorithms',
+        ammount: 0,
+      },
+      {
+        id: 4,
+        title: 'Producing Open Source Software',
+        ammount: 0,
+      },
+      {
+        id: 5,
+        title: 'The Future of the Internet',
+        ammount: 0,
+      },
+      {
+        id: 6,
+        title: 'A short introduction to operating systems',
+        ammount: 0,
+      },
+      {
+        id: 7,
+        title: 'Professional Software Development For Students',
+        ammount: 0,
+      },
+      {
+        id: 8,
+        title:
+          'Architectural Styles and the Design of Network-based Software Architectures',
+        ammount: 0,
+      },
+      {
+        id: 9,
+        title: 'Test Driven Development, Extensive Tutorial',
+        ammount: 0,
+      },
+      {
+        id: 10,
+        title: 'Designing for Performance',
+        ammount: 0,
+      },
+      {
+        id: 11,
+        title: 'ASP.NET Core 2 Succinctly',
+        ammount: 0,
+      },
+      {
+        id: 12,
+        title: 'Daily Design Patterns',
+        ammount: 0,
+      },
+      {
+        id: 13,
+        title: 'HTML5 For Web Designers',
+        ammount: 0,
+      },
+      {
+        id: 14,
+        title: "Crockford's JavaScript",
+        ammount: 0,
+      },
+      {
+        id: 15,
+        title: 'JavaScript Spessore',
+        ammount: 0,
+      },
+      {
+        id: 16,
+        title: 'TypeScript Accelerated',
+        ammount: 0,
+      },
+    ];
+  }
+
   private createUser(): void {
+    this.formGroup.value.books = this.addBooks;
+
     this.addUserSubscription.add(
       this.userService.addUser(this.formGroup.value).subscribe(
         (res) => this.dialog.close({ text: 'yes' }),

@@ -5,4 +5,11 @@ export interface User {
   name: string;
   lastName: string;
   password: string;
+  books: UserBook[];
+}
+
+export interface UserBook {
+  id: number;
+  title: string;
+  ammount: number;
 }

@@ -12,7 +12,89 @@
       "name": "user",
       "lastName": "users",
       "role": 2,
-      "id": 3
+      "id": 3,
+      "books": [
+        {
+          "id": 1,
+          "title": "Database Design - 2nd Edition",
+          "ammount": 0
+        },
+        {
+          "id": 2,
+          "title": "Docker Cookbook - Second Edition",
+          "ammount": 0
+        },
+        {
+          "id": 3,
+          "title": "Clever Algorithms",
+          "ammount": 0
+        },
+        {
+          "id": 4,
+          "title": "Producing Open Source Software",
+          "ammount": 0
+        },
+        {
+          "id": 5,
+          "title": "The Future of the Internet",
+          "ammount": 0
+        },
+        {
+          "id": 6,
+          "title": "A short introduction to operating systems",
+          "ammount": 0
+        },
+        {
+          "id": 7,
+          "title": "Professional Software Development For Students",
+          "ammount": 0
+        },
+        {
+          "id": 8,
+          "title": "Architectural Styles and the Design of Network-based Software Architectures",
+          "ammount": 0
+        },
+        {
+          "id": 9,
+          "title": "Test Driven Development, Extensive Tutorial",
+          "ammount": 0
+        },
+        {
+          "id": 10,
+          "title": "Designing for Performance",
+          "ammount": 0
+        },
+        {
+          "id": 11,
+          "title": "ASP.NET Core 2 Succinctly",
+          "ammount": 0
+        },
+        {
+          "id": 12,
+          "title": "Daily Design Patterns",
+          "ammount": 0
+        },
+        {
+          "id": 13,
+          "title": "HTML5 For Web Designers",
+          "ammount": 0
+        },
+        {
+          "id": 14,
+          "title": "Crockford's JavaScript",
+          "ammount": 0
+        },
+        {
+          "id": 15,
+          "title": "JavaScript Spessore",
+          "ammount": 0
+        },
+        {
+          "id": 16,
+          "title": "TypeScript Accelerated",
+          "ammount": 0
+        }
+      ]
     },
     {
       "email": "aaa@aaa.com",
@@ -20,7 +102,89 @@
       "name": "aaa",
       "lastName": "aaa",
       "role": 2,
-      "id": 5
+      "id": 5,
+      "books": [
+        {
+          "id": 1,
+          "title": "Database Design - 2nd Edition",
+          "ammount": 0
+        },
+        {
+          "id": 2,
+          "title": "Docker Cookbook - Second Edition",
+          "ammount": 0
+        },
+        {
+          "id": 3,
+          "title": "Clever Algorithms",
+          "ammount": 0
+        },
+        {
+          "id": 4,
+          "title": "Producing Open Source Software",
+          "ammount": 0
+        },
+        {
+          "id": 5,
+          "title": "The Future of the Internet",
+          "ammount": 0
+        },
+        {
+          "id": 6,
+          "title": "A short introduction to operating systems",
+          "ammount": 0
+        },
+        {
+          "id": 7,
+          "title": "Professional Software Development For Students",
+          "ammount": 0
+        },
+        {
+          "id": 8,
+          "title": "Architectural Styles and the Design of Network-based Software Architectures",
+          "ammount": 0
+        },
+        {
+          "id": 9,
+          "title": "Test Driven Development, Extensive Tutorial",
+          "ammount": 0
+        },
+        {
+          "id": 10,
+          "title": "Designing for Performance",
+          "ammount": 0
+        },
+        {
+          "id": 11,
+          "title": "ASP.NET Core 2 Succinctly",
+          "ammount": 0
+        },
+        {
+          "id": 12,
+          "title": "Daily Design Patterns",
+          "ammount": 0
+        },
+        {
+          "id": 13,
+          "title": "HTML5 For Web Designers",
+          "ammount": 0
+        },
+        {
+          "id": 14,
+          "title": "Crockford's JavaScript",
+          "ammount": 0
+        },
+        {
+          "id": 15,
+          "title": "JavaScript Spessore",
+          "ammount": 0
+        },
+        {
+          "id": 16,
+          "title": "TypeScript Accelerated",
+          "ammount": 0
+        }
+      ]
     },
     {
       "email": "tygu@mailinator.com",
@@ -28,7 +192,89 @@
       "name": "Shafira Kirby",
       "lastName": "Stark",
       "role": 2,
-      "id": 7
+      "id": 7,
+      "books": [
+        {
+          "id": 1,
+          "title": "Database Design - 2nd Edition",
+          "ammount": 0
+        },
+        {
+          "id": 2,
+          "title": "Docker Cookbook - Second Edition",
+          "ammount": 0
+        },
+        {
+          "id": 3,
+          "title": "Clever Algorithms",
+          "ammount": 0
+        },
+        {
+          "id": 4,
+          "title": "Producing Open Source Software",
+          "ammount": 0
+        },
+        {
+          "id": 5,
+          "title": "The Future of the Internet",
+          "ammount": 0
+        },
+        {
+          "id": 6,
+          "title": "A short introduction to operating systems",
+          "ammount": 0
+        },
+        {
+          "id": 7,
+          "title": "Professional Software Development For Students",
+          "ammount": 0
+        },
+        {
+          "id": 8,
+          "title": "Architectural Styles and the Design of Network-based Software Architectures",
+          "ammount": 0
+        },
+        {
+          "id": 9,
+          "title": "Test Driven Development, Extensive Tutorial",
+          "ammount": 0
+        },
+        {
+          "id": 10,
+          "title": "Designing for Performance",
+          "ammount": 0
+        },
+        {
+          "id": 11,
+          "title": "ASP.NET Core 2 Succinctly",
+          "ammount": 0
+        },
+        {
+          "id": 12,
+          "title": "Daily Design Patterns",
+          "ammount": 0
+        },
+        {
+          "id": 13,
+          "title": "HTML5 For Web Designers",
+          "ammount": 0
+        },
+        {
+          "id": 14,
+          "title": "Crockford's JavaScript",
+          "ammount": 0
+        },
+        {
+          "id": 15,
+          "title": "JavaScript Spessore",
+          "ammount": 0
+        },
+        {
+          "id": 16,
+          "title": "TypeScript Accelerated",
+          "ammount": 0
+        }
+      ]
     },
     {
       "email": "fimane@mailinator.com",
@@ -36,7 +282,89 @@
       "name": "Kim Flynn",
       "lastName": "Hinton",
       "role": 2,
-      "id": 8
+      "id": 8,
+      "books": [
+        {
+          "id": 1,
+          "title": "Database Design - 2nd Edition",
+          "ammount": 0
+        },
+        {
+          "id": 2,
+          "title": "Docker Cookbook - Second Edition",
+          "ammount": 0
+        },
+        {
+          "id": 3,
+          "title": "Clever Algorithms",
+          "ammount": 0
+        },
+        {
+          "id": 4,
+          "title": "Producing Open Source Software",
+          "ammount": 0
+        },
+        {
+          "id": 5,
+          "title": "The Future of the Internet",
+          "ammount": 0
+        },
+        {
+          "id": 6,
+          "title": "A short introduction to operating systems",
+          "ammount": 0
+        },
+        {
+          "id": 7,
+          "title": "Professional Software Development For Students",
+          "ammount": 0
+        },
+        {
+          "id": 8,
+          "title": "Architectural Styles and the Design of Network-based Software Architectures",
+          "ammount": 0
+        },
+        {
+          "id": 9,
+          "title": "Test Driven Development, Extensive Tutorial",
+          "ammount": 0
+        },
+        {
+          "id": 10,
+          "title": "Designing for Performance",
+          "ammount": 0
+        },
+        {
+          "id": 11,
+          "title": "ASP.NET Core 2 Succinctly",
+          "ammount": 0
+        },
+        {
+          "id": 12,
+          "title": "Daily Design Patterns",
+          "ammount": 0
+        },
+        {
+          "id": 13,
+          "title": "HTML5 For Web Designers",
+          "ammount": 0
+        },
+        {
+          "id": 14,
+          "title": "Crockford's JavaScript",
+          "ammount": 0
+        },
+        {
+          "id": 15,
+          "title": "JavaScript Spessore",
+          "ammount": 0
+        },
+        {
+          "id": 16,
+          "title": "TypeScript Accelerated",
+          "ammount": 0
+        }
+      ]
     },
     {
       "email": "panezywe@mailinator.net",
@@ -44,7 +372,89 @@
       "name": "Heidi Nguyen",
       "lastName": "Bowers",
       "role": 2,
-      "id": 9
+      "id": 9,
+      "books": [
+        {
+          "id": 1,
+          "title": "Database Design - 2nd Edition",
+          "ammount": 0
+        },
+        {
+          "id": 2,
+          "title": "Docker Cookbook - Second Edition",
+          "ammount": 0
+        },
+        {
+          "id": 3,
+          "title": "Clever Algorithms",
+          "ammount": 0
+        },
+        {
+          "id": 4,
+          "title": "Producing Open Source Software",
+          "ammount": 0
+        },
+        {
+          "id": 5,
+          "title": "The Future of the Internet",
+          "ammount": 0
+        },
+        {
+          "id": 6,
+          "title": "A short introduction to operating systems",
+          "ammount": 0
+        },
+        {
+          "id": 7,
+          "title": "Professional Software Development For Students",
+          "ammount": 0
+        },
+        {
+          "id": 8,
+          "title": "Architectural Styles and the Design of Network-based Software Architectures",
+          "ammount": 0
+        },
+        {
+          "id": 9,
+          "title": "Test Driven Development, Extensive Tutorial",
+          "ammount": 0
+        },
+        {
+          "id": 10,
+          "title": "Designing for Performance",
+          "ammount": 0
+        },
+        {
+          "id": 11,
+          "title": "ASP.NET Core 2 Succinctly",
+          "ammount": 0
+        },
+        {
+          "id": 12,
+          "title": "Daily Design Patterns",
+          "ammount": 0
+        },
+        {
+          "id": 13,
+          "title": "HTML5 For Web Designers",
+          "ammount": 0
+        },
+        {
+          "id": 14,
+          "title": "Crockford's JavaScript",
+          "ammount": 0
+        },
+        {
+          "id": 15,
+          "title": "JavaScript Spessore",
+          "ammount": 0
+        },
+        {
+          "id": 16,
+          "title": "TypeScript Accelerated",
+          "ammount": 0
+        }
+      ]
     },
     {
       "email": "tofyxofym@mailinator.com",
@@ -52,7 +462,89 @@
       "name": "Florence",
       "lastName": "Dunn",
       "role": 2,
-      "id": 11
+      "id": 11,
+      "books": [
+        {
+          "id": 1,
+          "title": "Database Design - 2nd Edition",
+          "ammount": 0
+        },
+        {
+          "id": 2,
+          "title": "Docker Cookbook - Second Edition",
+          "ammount": 0
+        },
+        {
+          "id": 3,
+          "title": "Clever Algorithms",
+          "ammount": 0
+        },
+        {
+          "id": 4,
+          "title": "Producing Open Source Software",
+          "ammount": 0
+        },
+        {
+          "id": 5,
+          "title": "The Future of the Internet",
+          "ammount": 0
+        },
+        {
+          "id": 6,
+          "title": "A short introduction to operating systems",
+          "ammount": 0
+        },
+        {
+          "id": 7,
+          "title": "Professional Software Development For Students",
+          "ammount": 0
+        },
+        {
+          "id": 8,
+          "title": "Architectural Styles and the Design of Network-based Software Architectures",
+          "ammount": 0
+        },
+        {
+          "id": 9,
+          "title": "Test Driven Development, Extensive Tutorial",
+          "ammount": 0
+        },
+        {
+          "id": 10,
+          "title": "Designing for Performance",
+          "ammount": 0
+        },
+        {
+          "id": 11,
+          "title": "ASP.NET Core 2 Succinctly",
+          "ammount": 0
+        },
+        {
+          "id": 12,
+          "title": "Daily Design Patterns",
+          "ammount": 0
+        },
+        {
+          "id": 13,
+          "title": "HTML5 For Web Designers",
+          "ammount": 0
+        },
+        {
+          "id": 14,
+          "title": "Crockford's JavaScript",
+          "ammount": 0
+        },
+        {
+          "id": 15,
+          "title": "JavaScript Spessore",
+          "ammount": 0
+        },
+        {
+          "id": 16,
+          "title": "TypeScript Accelerated",
+          "ammount": 0
+        }
+      ]
     },
     {
       "email": "nalywypyso@mailinator.net",
@@ -60,7 +552,89 @@
       "name": "Charlotte Dillon",
       "lastName": "Chan",
       "role": 2,
-      "id": 12
+      "id": 12,
+      "books": [
+        {
+          "id": 1,
+          "title": "Database Design - 2nd Edition",
+          "ammount": 0
+        },
+        {
+          "id": 2,
+          "title": "Docker Cookbook - Second Edition",
+          "ammount": 0
+        },
+        {
+          "id": 3,
+          "title": "Clever Algorithms",
+          "ammount": 0
+        },
+        {
+          "id": 4,
+          "title": "Producing Open Source Software",
+          "ammount": 0
+        },
+        {
+          "id": 5,
+          "title": "The Future of the Internet",
+          "ammount": 0
+        },
+        {
+          "id": 6,
+          "title": "A short introduction to operating systems",
+          "ammount": 0
+        },
+        {
+          "id": 7,
+          "title": "Professional Software Development For Students",
+          "ammount": 0
+        },
+        {
+          "id": 8,
+          "title": "Architectural Styles and the Design of Network-based Software Architectures",
+          "ammount": 0
+        },
+        {
+          "id": 9,
+          "title": "Test Driven Development, Extensive Tutorial",
+          "ammount": 0
+        },
+        {
+          "id": 10,
+          "title": "Designing for Performance",
+          "ammount": 0
+        },
+        {
+          "id": 11,
+          "title": "ASP.NET Core 2 Succinctly",
+          "ammount": 0
+        },
+        {
+          "id": 12,
+          "title": "Daily Design Patterns",
+          "ammount": 0
+        },
+        {
+          "id": 13,
+          "title": "HTML5 For Web Designers",
+          "ammount": 0
+        },
+        {
+          "id": 14,
+          "title": "Crockford's JavaScript",
+          "ammount": 0
+        },
+        {
+          "id": 15,
+          "title": "JavaScript Spessore",
+          "ammount": 0
+        },
+        {
+          "id": 16,
+          "title": "TypeScript Accelerated",
+          "ammount": 0
+        }
+      ]
     },
     {
       "email": "vuvuwomub@mailinator.net",
@@ -68,7 +642,89 @@
       "name": "Lacy Wilkins",
       "lastName": "Sandoval",
       "role": 2,
-      "id": 13
+      "id": 13,
+      "books": [
+        {
+          "id": 1,
+          "title": "Database Design - 2nd Edition",
+          "ammount": 0
+        },
+        {
+          "id": 2,
+          "title": "Docker Cookbook - Second Edition",
+          "ammount": 0
+        },
+        {
+          "id": 3,
+          "title": "Clever Algorithms",
+          "ammount": 0
+        },
+        {
+          "id": 4,
+          "title": "Producing Open Source Software",
+          "ammount": 0
+        },
+        {
+          "id": 5,
+          "title": "The Future of the Internet",
+          "ammount": 0
+        },
+        {
+          "id": 6,
+          "title": "A short introduction to operating systems",
+          "ammount": 0
+        },
+        {
+          "id": 7,
+          "title": "Professional Software Development For Students",
+          "ammount": 0
+        },
+        {
+          "id": 8,
+          "title": "Architectural Styles and the Design of Network-based Software Architectures",
+          "ammount": 0
+        },
+        {
+          "id": 9,
+          "title": "Test Driven Development, Extensive Tutorial",
+          "ammount": 0
+        },
+        {
+          "id": 10,
+          "title": "Designing for Performance",
+          "ammount": 0
+        },
+        {
+          "id": 11,
+          "title": "ASP.NET Core 2 Succinctly",
+          "ammount": 0
+        },
+        {
+          "id": 12,
+          "title": "Daily Design Patterns",
+          "ammount": 0
+        },
+        {
+          "id": 13,
+          "title": "HTML5 For Web Designers",
+          "ammount": 0
+        },
+        {
+          "id": 14,
+          "title": "Crockford's JavaScript",
+          "ammount": 0
+        },
+        {
+          "id": 15,
+          "title": "JavaScript Spessore",
+          "ammount": 0
+        },
+        {
+          "id": 16,
+          "title": "TypeScript Accelerated",
+          "ammount": 0
+        }
+      ]
     },
     {
       "email": "user@user.com",
@@ -76,7 +732,89 @@
       "name": "Dragan",
       "lastName": "Dejanovic",
       "role": 2,
-      "id": 14
+      "id": 14,
+      "books": [
+        {
+          "id": 1,
+          "title": "Database Design - 2nd Edition",
+          "ammount": 0
+        },
+        {
+          "id": 2,
+          "title": "Docker Cookbook - Second Edition",
+          "ammount": 0
+        },
+        {
+          "id": 3,
+          "title": "Clever Algorithms",
+          "ammount": 0
+        },
+        {
+          "id": 4,
+          "title": "Producing Open Source Software",
+          "ammount": 0
+        },
+        {
+          "id": 5,
+          "title": "The Future of the Internet",
+          "ammount": 0
+        },
+        {
+          "id": 6,
+          "title": "A short introduction to operating systems",
+          "ammount": 0
+        },
+        {
+          "id": 7,
+          "title": "Professional Software Development For Students",
+          "ammount": 0
+        },
+        {
+          "id": 8,
+          "title": "Architectural Styles and the Design of Network-based Software Architectures",
+          "ammount": 0
+        },
+        {
+          "id": 9,
+          "title": "Test Driven Development, Extensive Tutorial",
+          "ammount": 0
+        },
+        {
+          "id": 10,
+          "title": "Designing for Performance",
+          "ammount": 0
+        },
+        {
+          "id": 11,
+          "title": "ASP.NET Core 2 Succinctly",
+          "ammount": 0
+        },
+        {
+          "id": 12,
+          "title": "Daily Design Patterns",
+          "ammount": 0
+        },
+        {
+          "id": 13,
+          "title": "HTML5 For Web Designers",
+          "ammount": 0
+        },
+        {
+          "id": 14,
+          "title": "Crockford's JavaScript",
+          "ammount": 0
+        },
+        {
+          "id": 15,
+          "title": "JavaScript Spessore",
+          "ammount": 0
+        },
+        {
+          "id": 16,
+          "title": "TypeScript Accelerated",
+          "ammount": 0
+        }
+      ]
     }
   ],
   "books": [
@@ -145,7 +883,7 @@
       "year": "2016-06-28T22:00:00.000Z",
       "url": "https://mixmastamyk.bitbucket.io/pro_soft_dev/index.html",
       "imageUrl": "https://mixmastamyk.bitbucket.io/pro_soft_dev/_images/cover.png",
-      "inStock": 3,
+      "inStock": 2,
       "authors": ["Mike G. Miller"]
     },
     {
